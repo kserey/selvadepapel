@@ -1,9 +1,6 @@
 /*--------------------------------------------------------------
 # Import
 --------------------------------------------------------------*/
-@import "scss/extend";
-@import "scss/mixin"
-
 @font-face {
   font-family: 'another';
   src: url('another.woff2') format('woff2'),
