@@ -1,6 +1,3 @@
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 @font-face {
   font-family: 'another';
   src: url('another.woff2') format('woff2'),
@@ -11,43 +8,31 @@
 
 :root{
   --clr-darkgreen: #013832;
-  --clr-green:#387B5C;
-  --clr-beige:#CFD8BA;
-  --clr-orange:#C56A19;
-  --clr-black: #444444;
+  --clr-green: #387B5C;
+  --clr-beige: #CFD8BA;
+  --clr-orange: #C56A19;
+  --clr-grey: #444444;
+  --clr-white: #FFF;
+  --clr-black: #000; 
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6, ul, p, a, input, textarea {
-  margin: 0;
-  padding: 0;
-}
-
-ul{
-  list-style-type: 0;
-}
-
-a, a:hover {
-  text-decoration: none;
-}
-/
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 
 body {
-  color: #444444;
+  font-family: "Open Sans", sans-serif;
+  color: var(--clr-grey);
 }
 
 a {
-  color: #387B5C;
+  color: var(--clr-orange);
+  text-decoration: none;
 }
 
 a:hover {
-  color: #C56A19;
+  color: var(--clr-green);
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -60,7 +45,7 @@ a:hover {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #013832;
+  background: var(--clr-darkgreen);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -69,13 +54,13 @@ a:hover {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: var(--clr-white);
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #387B5C;
-  color: #fff;
+  background: var(--clr-green);
+  color: var(--clr-white);
 }
 
 .back-to-top.active {
@@ -104,7 +89,7 @@ a:hover {
 }
 
 #header .nombre a {
-  color: #fff;
+  color: var(--clr-white);
 }
 
 #header .logo img {
@@ -113,6 +98,8 @@ a:hover {
 
 #header .bolsa img {
   max-height: 100px;
+  border-radius: 50%;
+  color: var(--clr-white);
 }
 
 #header.header-scrolled,
@@ -154,7 +141,7 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   font-family: 'Poppins';
-  color: #fff;
+  color: var(--clr-white);
   font-size: 20px;
   padding: 0 4px;
   white-space: nowrap;
@@ -177,7 +164,7 @@ a:hover {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #387B5C;
+  background-color: var(--clr-green);
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
@@ -194,14 +181,14 @@ a:hover {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fff;
+  color: var(--clr-white);
 }
 
 /**
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: var(--clr-white);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -245,7 +232,7 @@ a:hover {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: var(--clr-white);
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -264,13 +251,13 @@ a:hover {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #493c3e;
+  color: var(--clr-grey);
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #013832;
+  color: var(--clr-darkgreen);
 }
 
 .navbar-mobile .getstarted,
@@ -314,7 +301,7 @@ a:hover {
 
 #portada h2 {
   background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: var(--clr-white);
   font-size: 26px;
   padding: 10px 30px;
   top: 30px;
@@ -334,11 +321,11 @@ a:hover {
   font-weight: 100;
   line-height: 56px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--clr-white);
 }
 
 #portada p{
-  color: #fff;
+  color: var(--clr-white);
   font-size: 24px;
 }
 
@@ -353,8 +340,8 @@ a:hover {
   border-radius: 25px;
   transition: 0.5s;
   margin-top: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid var(--clr-white);
+  color: var(--clr-white);
 }
 
 #portada .btn-ig-xs{
@@ -362,8 +349,8 @@ a:hover {
 }
 
 #portada .btn-get-started:hover {
-  background: #013832;
-  border: 2px solid #013832;
+  background: var(--clr-darkgreen);
+  border: 2px solid var(--clr-darkgreen);
 }
 
 
@@ -442,8 +429,8 @@ a:hover {
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
     margin-top: 6px;
-    border: 2px solid #013832;
-    color: #fff;
+    border: 2px solid var(--clr-darkgreen);
+    color: var(--clr-white);
   }
 
   #portada h2 {
@@ -482,7 +469,7 @@ section {
 }
 
 .section-bg {
-  background-color: white;
+  background-color: var(--clr-white);
 }
 
 .section-title {
@@ -497,8 +484,8 @@ section {
   padding: 8px 20px;
   line-height: 1;
   margin: 0;
-  background: #CFD8BA;
-  color: #013832;
+  background: var(--clr-beige);
+  color: var(--clr-darkgreen);
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -517,7 +504,7 @@ section {
 }
 
 .section-title h3 span {
-  color: #387B5C;
+  color: var(--clr-green);
 }
 
 .section-title p {
@@ -558,7 +545,7 @@ section {
   left: 0;
   top: 2px;
   font-size: 20px;
-  color: #013832;
+  color: var(--clr-darkgreen);
   line-height: 1;
 }
 
@@ -567,7 +554,7 @@ section {
 }
 
 .about .content span {
-  color: #387B5C;
+  color: var(--clr-green);
 }
 
 
@@ -589,17 +576,17 @@ section {
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
-  color: #444444;
+  color: var(--clr-black);
   margin: 0 3px 10px 3px;
   transition: all ease-in-out 0.3s;
-  background: #ede9e9;
+  background: var(--clr-white);
   border-radius: 50px;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #fff;
-  background: #013832;
+  color: var(--clr-white);
+  background: var(--clr-darkgreen);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -625,18 +612,18 @@ section {
   bottom: -50px;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: #013832;
+  background: var(--clr-darkgreen);
   padding: 15px 20px;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
-  color: #fff;
+  color: var(--clr-white);
   font-weight: 600;
 }
 
 .portfolio .portfolio-item .portfolio-info p {
-  color: #fff;
+  color: var(--clr-white);
   font-size: 14px;
   margin-bottom: 0;
 }
@@ -647,13 +634,13 @@ section {
   right: 50px;
   font-size: 24px;
   top: calc(50% - 18px);
-  color: white;
+  color: var(--clr-white);
   transition: ease-in-out 0.3s;
 }
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #CFD8BA;
+  color: var(--clr-beige);
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -670,16 +657,17 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# Portfolio-details
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
 }
 
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
+.portfolio-details .container{
+  padding-top: 90px;
 }
 
+/* -- Swiper --*/
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
@@ -688,14 +676,55 @@ section {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: var(--clr-white);
   opacity: 1;
-  border: 1px solid #013832;
+  border: 1px solid var(--clr-darkgreen);
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #013832;
+  background-color: var(--clr-darkgreen);
 }
+/* -- End Swiper --*/
+
+.portfolio-details .portfolio-description .portfolio-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.portfolio-details .portfolio-description .portfolio-header h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.portfolio-description .btn-portfolio-details {
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  border: 2px solid var(--clr-white);
+  color: var(--clr-white);
+  
+}
+
+.portfolio-description .btn-portfolio-details {
+  background: var(--clr-darkgreen);
+  border: 2px solid var(--clr-darkgreen);
+}
+
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+}
+
+
 
 .portfolio-details .portfolio-info {
   padding: 30px;
@@ -707,7 +736,7 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--clr-white);
 }
 
 .portfolio-details .portfolio-info ul {
@@ -720,65 +749,6 @@ section {
   margin-top: 10px;
 }
 
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-/*--------------------------------------------------------------
-# portfolio-details
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# Breadcrumbs Section
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 30px 0;
-  background: #f6f4f4;
-  margin-top: 100px;
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs {
-    margin-top: 60px;
-  }
-}
-
-.breadcrumbs h2 {
-  font-size: 26px;
-  font-weight: 600;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-
-
-.breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #387B5C;
-  content: "/";
-}
-
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
@@ -789,13 +759,13 @@ section {
 }
 
 .cta h3 {
-  color: #fff;
+  color: var(--clr-white);
   font-size: 28px;
   font-weight: 700;
 }
 
 .cta p {
-  color: #fff;
+  color: var(--clr-white);
 }
 
 .cta .cta-btn {
@@ -809,13 +779,13 @@ section {
   border-radius: 25px;
   transition: 0.5s;
   margin-top: 10px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid var(--clr-white);
+  color: var(--clr-white);
 }
 
 .cta .cta-btn:hover {
-  background: #013832;
-  border: 2px solid #013832;
+  background: var(--clr-darkgreen);
+  border: 2px solid var(--clr-darkgreen);
 }
 
 @media (min-width: 1024px) {
@@ -846,7 +816,7 @@ section {
   font-weight: bold;
   padding-left: 25px;
   cursor: pointer;
-  color: #387B5C;
+  color: var(--clr-green);
   transition: 0.3s;
 }
 
@@ -858,7 +828,7 @@ section {
 }
 
 .faq .faq-list li {
-  border-bottom: 1px solid #f1eeef;
+  border-bottom: 1px solid var(--clr-white);
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
@@ -880,11 +850,11 @@ section {
 }
 
 .faq .faq-list .collapsed {
-  color: black;
+  color: var(--clr-black);
 }
 
 .faq .faq-list .collapsed:hover {
-  color: #013832;
+  color: var(--clr-darkgreen);
 }
 
 .faq .faq-list .collapsed .icon-show {
@@ -907,21 +877,21 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #444444;
+  color: var(--clr-grey);
   font-size: 14px;
-  background: #f6f4f4;
+  background: var(--clr-white);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: var(--clr-white);
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: var(--clr-grey);
   position: relative;
   padding-bottom: 12px;
 }
@@ -938,7 +908,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 5px;
-  color: #387B5C  ;
+  color: var(--clr-green)  ;
   font-size: 18px;
   line-height: 1;
 }
@@ -958,7 +928,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #387B5C;
+  color: var(--clr-green);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -966,9 +936,14 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #013832;
+  color: var(--clr-darkgreen);
 }
 
-#footer .copyright i{
-  color: #387B5C;
+#footer .copyright a, i{
+  color: var(--clr-green);
 }
+
+#footer .copyright a:hover {
+  color: var(--clr-orange) ;
+}
+
