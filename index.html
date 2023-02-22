@@ -17,10 +17,11 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <!-- <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style_bag.css" rel="stylesheet">
+  <link href="assets/css/style_portfolio.css" rel="stylesheet">
 
 </head>
 
@@ -30,7 +31,9 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo"><img src="assets/img/SIMBOLO_REDONDO.png" alt="logo Selva de Papel" class="img-fluid"></a>
+      <a href="index.html">
+        <img src="assets/img/SIMBOLO_REDONDO.png" alt="logo Selva de Papel"  class="logo-img">
+      </a>
 
       <!-- Navbar -->
       <nav id="navbar" class="navbar">
@@ -49,7 +52,10 @@
       </nav>
       <!-- end Navbar -->
 
-      <a href="bolsa.html" class="bolsa"><img src="assets/img/icons/bolsa3.png" alt="bolsa de compras"  class="img-fluid"><span class="bolsaCant">0</span></a>
+      <a href="bolsa.html" >
+        <img src="assets/img/icons/bolsa.png" alt="bolsa de compras" class="bolsa-img">
+        <span class="bolsaCant">0</span>
+      </a>
       
     </div>
   </header>
@@ -65,7 +71,7 @@
       <a class="btn-ig-xs" href="https://www.instagram.com/selvadepapel_/" target="_blank">IG</a>
     </div>
   </section>
-  <!-- End Hero -->
+  <!-- End Portada -->
 
   <main id="main">
 
@@ -133,19 +139,21 @@
           </div>
         </div>
 
+        <!-- ======= Productos Section ======= -->
+
         <div class="row portfolio-container">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Producto 1</h4>
-              <p>Office</p>
-              <a href=""  class="portfolio-lightbox preview-link"><i class="bi bi-bag-heart"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="prod col-lg-4 col-md-6 portfolio-item filter-app">
+            <img class="prod-img img-fluid" src="assets/img/portfolio/portfolio-1.jpg" alt="">
+            <div class="prod-info portfolio-info">
+              <h4 class="prod-titulo">Producto 1</h4>
+              <p class="prod-colec">Office</p>
+              <a class="portfolio-lightbox preview-link" href="" title="Agregar" ><i class="bi bi-bag-heart"></i></a>
+              <a class="details-link" href="portfolio-details.html" title="Detalles"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web producto">
             <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Producto 1</h4>
@@ -154,7 +162,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app producto">
             <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Producto 2</h4>
@@ -163,7 +171,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card producto">
             <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Producto 1</h4>
@@ -172,7 +180,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web producto">
             <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Producto 2</h4>
@@ -181,7 +189,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app producto">
             <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Producto 3</h4>
@@ -190,7 +198,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card producto">
             <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Producto 2</h4>
@@ -199,7 +207,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card producto">
             <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Producto 3</h4>
@@ -208,7 +216,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web producto">
             <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Producto 3</h4>

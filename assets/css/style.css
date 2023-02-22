@@ -77,29 +77,12 @@ a:hover {
   padding: 20px 0;
 }
 
-#header .nombre {
-  font-family: 'another';
-  font-size: 40px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 100;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-#header .nombre a {
-  color: var(--clr-white);
-}
-
-#header .logo img {
+#header .logo-img {
   max-height: 100px;
 }
 
-#header .bolsa img {
+#header .bolsa-img {
   max-height: 100px;
-  border-radius: 50%;
-  color: var(--clr-white);
 }
 
 #header.header-scrolled,
@@ -356,13 +339,14 @@ a:hover {
 
 /** Laptop Large 1440px css puro **/
 
+/** Laptop 1024px **/
 @media (min-width: 1024px)  {
-  #header .logo img{
-    max-height: 70px;
+  #header .logo-img {
+    max-height: 80px;
   }
 
-  #header .bolsa img{
-    max-height: 70px;
+  #header .bolsa-img {
+    max-height: 80px;
   }
 
   #portada {
@@ -386,12 +370,12 @@ a:hover {
 /** Tablet 768px **/
 
 @media (max-width: 768px) {
-  #header .logo img{
-    max-height: 60px;
+  #header .logo-img {
+    max-height: 70px;
   }
 
-  #header .bolsa img{
-    max-height: 60px;
+  #header .bolsa-img {
+    max-height: 70px;
   }
 
   #portada h2 {
@@ -410,6 +394,14 @@ a:hover {
 
 /** Móvil L 425px **/
 @media (max-width: 426px) {
+  #header .logo-img {
+    max-height: 50px;
+  }
+
+  #header .bolsa-img {
+    max-height: 50px;
+  }
+
   #portada .btn-get-started{
     display: none;
   }
@@ -456,7 +448,7 @@ a:hover {
 
 @media (max-height: 600px){
   #portada {
-    height: 70vh;
+    height: 75vh;
   }
 }
 
@@ -654,99 +646,6 @@ section {
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
-}
-
-/*--------------------------------------------------------------
-# Portfolio-details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .container{
-  padding-top: 90px;
-}
-
-/* -- Swiper --*/
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: var(--clr-white);
-  opacity: 1;
-  border: 1px solid var(--clr-darkgreen);
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--clr-darkgreen);
-}
-/* -- End Swiper --*/
-
-.portfolio-details .portfolio-description .portfolio-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-
-.portfolio-details .portfolio-description .portfolio-header h2 {
-  font-size: 26px;
-  font-weight: 700;
-}
-
-.portfolio-description .btn-portfolio-details {
-  font-family: "Nunito", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 25px;
-  transition: 0.5s;
-  border: 2px solid var(--clr-white);
-  color: var(--clr-white);
-  
-}
-
-.portfolio-description .btn-portfolio-details {
-  background: var(--clr-darkgreen);
-  border: 2px solid var(--clr-darkgreen);
-}
-
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(73, 60, 62, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--clr-white);
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
 }
 
 /*--------------------------------------------------------------

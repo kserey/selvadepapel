@@ -12,16 +12,17 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-   <!-- Vendor CSS Files -->
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <!-- <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style_bag.css" rel="stylesheet">
+  <link href="assets/css/style_portfolio.css" rel="stylesheet">
 
 </head>
 
@@ -31,35 +32,64 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo"><img src="assets/img/SIMBOLO_REDONDO.png" alt="logo Selva de Papel" class="img-fluid"></a>
+      <a href="index.html">
+        <img src="assets/img/SIMBOLO_REDONDO.png" alt="logo Selva de Papel"  class="logo-img">
+      </a>
 
       <!-- Navbar -->
       <nav id="navbar" class="navbar">
         <ul>
           <li>
-            <a class="nav-link scrollto" href="#portada">Home</a>
+            <a class="nav-link scrollto" href="index.html#portada">Home</a>
           </li>
           <li>
-            <a class="nav-link scrollto" href="#about">Nosotros</a>
+            <a class="nav-link scrollto" href="index.html#about">Nosotros</a>
           </li>
           <li>
-            <a class="nav-link scrollto" href="#portfolio">Colecciones</a>
-          </li>
-          <li>
-            <a class="nav-link scrollto" href="mailto:contacto.selvadepapel@gmail.com">Escríbenos</a>
+            <a class="nav-link scrollto" href="index.html#portfolio">Colecciones</a>
           </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
       <!-- end Navbar -->
 
-      <a href="index.html" class="bolsa"><span class="bolsaCant">0</span><img src="assets/img/icons/bolsa3.png" alt="bolsa de compras"  class="img-fluid"></a>
+      <a href="bolsa.html">
+        <img src="assets/img/icons/bolsa.png" alt="bolsa de compras" class="bolsa-img">
+        <span class="bolsaCant">0</span>
+      </a>
       
     </div>
   </header>
   <!-- end Header -->
 
+  <main id="main">
 
+    <!-- ======= Bag Section ======= -->
+    <section id="bag">
+      <div class="bag-container">
+        <h2>Bolsa de Compras</h2>
+      </div>
+
+      <!-- ======= Products Section ======= -->
+
+      <div class="row portfolio-container">
+
+        <div class="prod col-lg-4 col-md-6 portfolio-item filter-app">
+          <img class="prod-img img-fluid" src="assets/img/portfolio/portfolio-1.jpg" alt="">
+          <div class="prod-info portfolio-info">
+            <h4 class="prod-titulo">Producto 1</h4>
+            <p class="prod-colec">Office</p>
+            <a class="portfolio-lightbox preview-link" href="" title="Agregar" ><i class="bi bi-bag-heart"></i></a>
+            <a class="details-link" href="portfolio-details.html" title="Detalles"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -125,7 +155,6 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
